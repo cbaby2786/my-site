@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official Hub | Artist & Dev</title>
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --accent: #00ff41; /* Hacker Green */
+            --text: #ffffff;
+        }
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        header {
+            margin-top: 50px;
+            padding: 20px;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid var(--accent);
+            object-fit: cover;
+        }
+        h1 { font-size: 2.5rem; letter-spacing: 5px; text-transform: uppercase; }
+        .tagline { color: #888; margin-bottom: 30px; }
+        
+        .container { width: 90%; max-width: 600px; }
+        
+        .link-card {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            transition: 0.3s;
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+        .link-card:hover {
+            border-color: var(--accent);
+            transform: scale(1.02);
+            box-shadow: 0 0 15px var(--accent);
+        }
+        .btn-buy {
+            background: var(--accent);
+            color: black;
+            font-weight: bold;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://via.placeholder.com/150" alt="Profile" class="profile-pic">
+        <h1>[YOUR NAME]</h1>
+        <p class="tagline">Musical Artist // Cybersecurity Enthusiast</p>
+    </header>
+
+    <div class="container">
+        <a href="https://youtube.com" class="link-card">
+            <h3>🎬 Latest Music Video</h3>
+            <p>Watch the new drop on YouTube</p>
+        </a>
+
+        <a href="https://github.com" class="link-card">
+            <h3>💻 Ghost Hack Project</h3>
+            <p>Check out my latest terminal tools</p>
+        </a>
+
+        <a href="https://t.me/yourusername" class="btn-buy">
+            💰 SHOP / BOOKINGS (DM ON TELEGRAM)
+        </a>
+    </div>
+
+    <footer style="margin-top: 50px; font-size: 0.8rem; color: #444;">
+        © 2026 Built by [Your Name]
+    </footer>
+
+</body>
+</html>
